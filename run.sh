@@ -15,6 +15,7 @@ terraform init
 
 terraform validate
 
+# region is an optional variable, so I skipped it.
 terraform apply -auto-approve \
 	  -var "github_token=$GITHUB_TOKEN" \
 	  -var "account_id=$ACCOUNT_ID"
